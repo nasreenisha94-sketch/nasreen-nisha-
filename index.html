@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>College Event Registration</h1>
+        <p>Register for your favorite college event</p>
+
+        <form id="registrationForm">
+
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Register Number</label>
+            <input type="text" id="regno" placeholder="Enter register number" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <label>Department</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select>
+
+            <label>Select Event</label>
+            <select id="event" required>
+                <option value="">Select Event</option>
+                <option>Paper Presentation</option>
+                <option>Web Designing</option>
+                <option>Code Debugging</option>
+                <option>Quiz Competition</option>
+                <option>Photography</option>
+            </select>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+            <button type="submit">Register Now</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
